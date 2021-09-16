@@ -1,15 +1,40 @@
+/* Color scheme
+Sea Green: #33915F
+Dark Green: #011C0E
+Feldgrau: #436352
+Forest Green: #114F2E
+Emerald: #2DC272
+Spring green: 2AFA8B
+
+https://coolors.co/33915f-011c0e-436352-114f2e-2dc272-2afa8b
+*/
+
 body{
   font-family: 'Times New Roman';
+  background-color: white;
 }
 h1{
   font-family: helvetica;
-  color: #3E8080;
-  border: solid 5px black;
-  border-radius: 20px;
+  border: solid 3px #2DC272;
+  border-radius: 3px;
 }
 h2{
   font-family: helvetica;
-  color: #3E8080;
-  border: solid 5px black;
-  border-radius: 20px;
+  border: solid 2px #2DC272;
+  border-radius: 3px;
+}
+h3{
+  font-family: helvetica;
+  border: solid 1px #2DC272;
+  border-radius: 3px;
+}
+a:link{
+  color: #33915F;
+}
+a:visited{
+  color: #114F2E;
+}
+img{
+  width:25vw;
+  margin:10px;
 }
