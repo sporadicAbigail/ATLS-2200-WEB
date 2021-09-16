@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- this is intentionally on the top level -->
+<html lang="en">
+  <head>
+    <title>Week 2</title>
+  </head>
+  <body>
+    <section id="pagetop">
+      <!-- id gives sections a name -->
+    <h1>Welcome to my Site</h1>
+    <p>This is my website</p>
+    <p><a href="#footer">Go to end</a></p>
+    </section>
+
+    <p>Remote hosting an image</p>
+    <img src="https://pbs.twimg.com/media/E8FprEtVEAI2GHD?format=jpg&name=4096x4096"
+    style="width:30vw" alt="Stray Kids NOEASY promotional image"/>
+    <!-- The image url is basically just grabbed from google, "copy url address" -->
+    <!-- This is remote hosting, someone else is hosting the image
+    locally hosting the file means the file is located in the same place as
+    index.html -->
+
+    <p>locally hosting</p>
+    <img src ="assets/luka.jpg" style= "width:20vw" alt="Luka Megurine doll"/>
+    <!-- to confirm that you are locally hosting an image, go into your server and
+    type in what you think is the address that'll lead to your image. the image
+    should show up -->
+    <!-- whatever is hosted is reflective of your file system/structure -->
+    <!-- atom is just a way to show files, but it is an absolute mirror of your <fieldset>
+      system -->
+    <!-- alt text is important for disabled and so people know what the image is
+    the case it doesn't load and is broken -->
+
+    <p> adding a link </p>
+    <p>This paragraph <a href="https://www.google.com" target="_blank">contains</a> a link</p>
+    <!-- target blank tells the browser to open in a new tab, but there are a lot
+    of different targets -->
+    <!-- you need the https:// for external links, or else it will think it's local -->
+    <h2>This <a href="https://www.twitter.com"> header </a> contains a link</h2>
+    <p> This goes to <a href="second.html"> locally hosted page </a></p>
+
+    <section id="footer">
+    <p><a href="#pagetop">Back to top</a></p>
+    <!-- best practice to open and close a tag at the same time -->
+    </section>
+    
+    </body>
+</html>
