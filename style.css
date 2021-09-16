@@ -1,0 +1,9 @@
+body{
+  font-family: 'Times New Roman';
+}
+h1{
+  font-family: helvetica;
+  color: #3E8080;
+  border: solid 5px white;
+  border-radius: 20px;
+}
