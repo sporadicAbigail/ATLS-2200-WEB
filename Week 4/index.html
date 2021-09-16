@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Week 4: CSS 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* whatever is in here goes into style.css file */
+    </style>
+  </head>
+  <body>
+    <section id = "top">
+      <h1>This is my top header</h1>
+      <h2>Making nested lists</h2>
+      <p>Start a new list (ul or ol) within the list</p>
+      <ul style="color:red">
+          <li>Coffee</li>
+          <li>Tea
+            <ul style="color:#eba434">
+              <li>Black</li>
+              <li>Green</li>
+            </ul>
+          </li>
+          <li>water</li>
+      </ul>
+    </section>
+
+    <section id="img">
+      <a href="https://google.com"><img src="img.png"></a>
+    </section>
+
+    <section id = "form">
+      <h2>Building a form</h2>
+      <p>each form should have a label</p>
+      <form>
+        <p>Typically don't use </br> But here in forms is when you can</p>
+        <label for="fname">First name:</label></br>
+        <input type="text" name="fname"></br>
+        <label for="lname">Last name:</label></br>
+        <input type="text" name="lname"></br>
+        <input type="radio" id="coffee" name="coffee"><label for="coffee">Coffee</label>
+        <input type="radio" id="tea" name="tea"><label for="tea">Tea</label>
+        <input type="radio" id="water" name="water"><label for="water">water</label>
+        <button id="submit">Submit</button>
+      </form>
+      <a href="#top"><h1>Back to top</h1></a>
+      <p>but please don't do multiple h1's in one page</p>
+    </section>
+    <h2>Styling</h2>
+    <h3>Changing color of text</h3>
+    <strong>This is all inline</strong>
+    <p>style="color:red" There are some default colors, but most often people
+    are using hex codes</p>
+    <p>Defaults: https://www.w3schools.com/colors/colors_names.asp</p>
+    <p>These go within the hierarchy</p>
+    <p>Can also do style="color:hex code"</p>
+    <p>Can also use rgb style="color:rgb(0,255,0)"</p>
+    <strong>not in line</strong>
+    <p>put name of tag in beginning, open with curly bracket,
+    name of what you wwant to change, then what you're going to change it to,
+    then end with semicolon</p>
+    <p>web safe fonts: https://www.w3schools.com/cssref/css_websafe_fonts.asp</p>
+    <p>Best practice to not do in-line styling because it's so inconvenient. Put it
+    all in one place at the beginning (internal).</p>
+    <p>Important to make color scheme before hand so it's not atrocious. Knowing
+    styling beforehand is very important. Style with a destination vs Styling
+    on the fly</p>
+    <p>Making things consistent overall helps things look better</p>
+
+    <p>Bring over what was in style into style.css</p>
+    <p>link style sheets in style.css</p>
+    <p>make sure all css is in the same place. Never have style in multiple
+    places.</p>
+  </body>
+</html>

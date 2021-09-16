@@ -1,0 +1,38 @@
+h1{
+  font-size: 50px;
+  color:red;
+}
+body{
+  background-color:rgb(90,200,200);
+  font-family: helvetica;
+}
+#top{
+  background-color:pink
+  /* font-family: cursive; */
+}
+
+#top h1{
+  color:blue;
+  /* only top header will be blue */
+  border: solid 10px white;
+  border-radius: 20px;
+}
+
+
+ul{
+  color:red;
+  font-family: Cursive;
+  font-weight: 600;
+  /* 800 is highest weight */
+}
+
+img{
+  width:25vw;
+  margin:10px;
+}
+form{
+  margin-left:20px;
+  /* makes it responsive to size of the page*/
+  /* responsive to view width or view height */
+  font-size: 3vw;
+}
