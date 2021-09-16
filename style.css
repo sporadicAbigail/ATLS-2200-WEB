@@ -4,6 +4,12 @@ body{
 h1{
   font-family: helvetica;
   color: #3E8080;
-  border: solid 5px white;
+  border: solid 5px black;
+  border-radius: 20px;
+}
+h2{
+  font-family: helvetica;
+  color: #3E8080;
+  border: solid 5px black;
   border-radius: 20px;
 }
