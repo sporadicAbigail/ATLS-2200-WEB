@@ -1,12 +1,20 @@
 /* Color scheme
+GREEN
 Sea Green: #33915F
 Dark Green: #011C0E
 Feldgrau: #436352
 Forest Green: #114F2E
 Emerald: #2DC272
 Spring green: 2AFA8B
-
 https://coolors.co/33915f-011c0e-436352-114f2e-2dc272-2afa8b
+
+PURPLE
+Palatinate Purple: #4F1852
+Dark Purple: #200221
+Fuchsia: #DF3AE8
+Mardi Gras: #821C87
+Purpureus: #9C43A1
+Fuchsia Crayola: #CD57D4
 */
 
 body{
@@ -15,25 +23,25 @@ body{
 }
 h1{
   font-family: helvetica;
-  border: solid 3px #2DC272;
+  border: solid 3px #DF3AE8;
   border-radius: 3px;
   font-size: 40px;
 }
 h2{
   font-family: helvetica;
-  border: solid 2px #2DC272;
+  border: solid 2px #DF3AE8;
   border-radius: 3px;
 }
 h3{
   font-family: helvetica;
-  border: solid 1px #2DC272;
+  border: solid 1px #DF3AE8;
   border-radius: 3px;
 }
 a:link{
-  color: #33915F;
+  color: #9C43A1;
 }
 a:visited{
-  color: #114F2E;
+  color: #4F1852;
 }
 img{
   width:25vw;
