@@ -68,7 +68,7 @@ span{
 }
 #three{
   border: solid black 1px;
-  background-color: red;
+  background-color: lightskyblue;
   padding: 30px 0px 30px 0px;
   /* padding top right bottom left */
   /* this is the standard way to write your padding */
