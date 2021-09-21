@@ -1,0 +1,102 @@
+body{
+  font-family: arial;
+  /* hooray responsive styling based on window width*/
+  font-size: 2vw;
+  font-weight: 100;
+  border: solid rgb(200,100,100) 1px;
+  margin:0;
+  padding:0px;
+}
+p{
+  color: rgb(100,100,100);
+}
+h1{
+  background-color: pink;
+  color: black !important;
+  border: solid red 1px;
+  margin-left: 5px;
+  font-family:"Roboto";
+}
+h2{
+  font-family:"Fjalla+One";
+}
+#second{
+  font-weight:bold;
+}
+
+.grey{
+  color:rgb(100,100,100);
+}
+
+.background{
+  background-color:rgb(255, 255,255);
+}
+
+p.background{
+  color:red;
+}
+span{
+  color:blue;
+  font-weight:bold;
+}
+#sit{
+  font-family:cursive;
+}
+#solid{
+  border:solid rgb(255,255,0) 2px;
+}
+#dotted{
+  border:dotted rgb(255,255,0) 2px;
+}
+#dashed{
+  border:dashed rgb(255,255,0) 2px;
+}
+#double{
+  border:solid rgb(255,255,0) 2px;
+}
+#ridge{
+  border:ridge rgb(255,255,0) 2px;
+}
+#groove{
+  border:groove rgb(255,255,0) 2px;
+}
+#two{
+  border: solid black 1px;
+  background-color: orange;
+  margin: 50px;
+  padding: 50px;
+}
+#three{
+  border: solid black 1px;
+  background-color: red;
+  padding: 30px 0px 30px 0px;
+  /* padding top right bottom left */
+  /* this is the standard way to write your padding */
+  margin-left: 10vw;
+
+}
+section{
+  border: solid green 2px;
+  margin:0;
+  /* by default, each section has a margin */
+}
+#hero{
+  width:100vw;
+  margin:0px;
+  padding:0px;
+  z-index:-1;
+}
+#header{
+  height:50vh;
+  overflow:hidden;
+  position:relative;
+}
+#header h1{
+  position:absolute;
+  width:100px;
+  height:100px;
+  z-index:1;
+}
+img{
+  width:70vw;
+}
