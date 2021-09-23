@@ -17,28 +17,35 @@ Purpureus: #9C43A1
 Fuchsia Crayola: #CD57D4
 
 BLUE
+Light Sea Green: #08A8A8
+Celadon green: #3E8080
+Electric Blue: #92F0F0
+Vegas Gold: #D6BA73
+
 
 */
 
 body{
-  font-family: 'Maitree';
+  font-family: "Maitree";
   background-color: white;
 }
 h1{
-  font-family: 'Julius+Sans+One';
+  font-family: 'Julius Sans One', sans-serif;
   border: solid 3px #DF3AE8;
+  border-radius: 3px;
+  font-size: 48px;
+}
+h2{
+  font-family: 'Julius Sans One', sans-serif;
+  border: solid 2px #DF3AE8;
   border-radius: 3px;
   font-size: 40px;
 }
-h2{
-  font-family: helvetica;
-  border: solid 2px #DF3AE8;
-  border-radius: 3px;
-}
 h3{
-  font-family: helvetica;
+  font-family: 'Julius Sans One', sans-serif;
   border: solid 1px #DF3AE8;
   border-radius: 3px;
+  font-size: 32px;
 }
 a:link{
   color: #9C43A1;
