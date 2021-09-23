@@ -15,17 +15,14 @@ Fuchsia: #DF3AE8
 Mardi Gras: #821C87
 Purpureus: #9C43A1
 Fuchsia Crayola: #CD57D4
-
-BLUE
-
 */
 
 body{
-  font-family: 'Maitree';
+  font-family: 'Times New Roman';
   background-color: white;
 }
 h1{
-  font-family: 'Julius+Sans+One';
+  font-family: helvetica;
   border: solid 3px #DF3AE8;
   border-radius: 3px;
   font-size: 40px;
