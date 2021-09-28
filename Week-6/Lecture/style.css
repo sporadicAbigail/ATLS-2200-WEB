@@ -1,0 +1,78 @@
+p{
+  color:red;
+  font-family:helvetica;
+}
+body{
+  padding:0px;
+  margin:0px;
+}
+h1,h2{
+  font-family:"bebas neue";
+}
+
+h2{
+  font-size: 40px;
+}
+
+#hero{
+  width:100vw;
+  height:40vh;
+  overflow:hidden;
+  margin:0px;
+  padding:0px;
+
+}
+
+#heroimg{
+  /* could also write as #hero img{} */
+  width:120vw;
+  position: relative;
+  bottom: 100px;
+  right:100px;
+}
+
+#hero h1{
+  z-index:1;
+  position:relative;
+  font-size:5vw;
+  top:30vh;
+  margin:0 0 0 7vw;
+
+}
+
+#one, #two, #three{
+  margin-left:7vw;
+  margin-right:3vw;
+  /* less margin on right vs left */
+  margin-top:10vw;
+}
+
+button{
+  background-color: #ebbd34;
+  font-family:"bebas neue";
+  /* border-radius: 10px; */
+  font-size:30px;
+  margin:10px;
+  padding:7px 20px;
+  /* top and bottom correspond to first, left and right corresponds to second */
+}
+
+button:active{
+  background-color: lightblue;
+  color:white;
+}
+button:hover{
+  border:solid black 3px;
+}
+a:link{
+  color:lightblue;
+}
+a:visited{
+  color:lightgrey;
+}
+a:hover{
+  font-size:200%;
+}
+a:active{
+  color:red;
+}
