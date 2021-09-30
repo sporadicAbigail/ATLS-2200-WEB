@@ -31,29 +31,58 @@ body{
 }
 h1{
   font-family: 'Julius Sans One', sans-serif;
-  border: solid 3px #DF3AE8;
-  border-radius: 3px;
   font-size: 48px;
 }
 h2{
   font-family: 'Julius Sans One', sans-serif;
-  border: solid 2px #DF3AE8;
-  border-radius: 3px;
   font-size: 40px;
 }
 h3{
   font-family: 'Julius Sans One', sans-serif;
-  border: solid 1px #DF3AE8;
-  border-radius: 3px;
   font-size: 32px;
 }
+h4{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 26px;
+}
+h5{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 18px;
+}
+h6{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 14px;
+}
 a:link{
-  color: #9C43A1;
+  color: #08A8A8;
+  text-decoration: none;
+}
+a:hover{
+  color: #08A8A8;
+  text-decoration: underline;
 }
 a:visited{
-  color: #4F1852;
+  color: #3E8080;
 }
 img{
   width:25vw;
   /* margin:2px; */
+}
+hr.top{
+  width: 30%;
+  margin-left: 0px;
+  margin-bottom:0px;
+  border-top: 2px dashed #92F0F0;
+  /* border: 1px solid pink; */
+}
+hr.mid{
+  margin-top:2px;
+  margin-bottom:2px;
+  border-top: 1px solid #92F0F0;
+}
+hr.bottom{
+  width: 30%;
+  margin-right: 0px;
+  margin-top:0px;
+  border-top:2px dashed #92F0F0;
 }
