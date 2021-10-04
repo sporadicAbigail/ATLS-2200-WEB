@@ -1,0 +1,41 @@
+/* The dreamy landscape */
+/* pink: #A65D85
+purple: #9C9BBF
+brown: #D9AA8F
+peach: #F2D5C4
+red: #BF7E78 */
+
+:root{
+  --dreamyPink: #A65D85;
+  --dreamyPurple: #9C9BBF;
+  --dreamyBrown: #D9AA8F;
+  --dreamyPeach: #F2D5C4;
+  --dreamyRed: #BF7E78;
+  }
+
+h1{
+  font-family:"birthstone";
+  color:var(--dreamyPurple);
+  font-size: 50px;
+}
+p{
+  font-family:"Raleway";
+}
+body{
+  background-color: var(--dreamyPeach);
+}
+img{
+  width: 98vw;
+  margin-right: 1vw;
+}
+button{
+  margin-top: 10px;
+  background-color: var(--dreamyRed);
+  font-family:"Raleway";
+  font-size:15px;
+  padding:7px 7px;
+}
+button:hover{
+  border:solid black 2px;
+  color: white;
+}
