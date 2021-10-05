@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Week 7, 10/5/21</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+  </head>
+  <body>
+    <section id="quoteSection">
+      <h1 id="qText">Welcome to The Quote Machine, click the button to get a quote.</h1>
+      <button id="newQuote">New Quote</button>
+      <p>Constant variable is js is something that doesn't change at all, based on user input or anything.</p>
+      <p>We're using a constant today for our quotes.</p>
+      <h3>Incrementing</h3>
+      <p>Usig += 1 or ++</p>
+      <h3>Decrementing</h3>
+      <p>-= 1</p>
+    </section>
+
+    <section id="flex">
+      <div class="flexitem">
+        <h2>One</h2>
+      </div>
+      <div class="flexitem2">
+        <h2>Two</h2>
+      </div>
+      <div class="flexitem">
+        <h2>Three</h2>
+      </div>
+    </section>
+
+    <script>
+      const quotes = ["As long as I stay with my heart, I can use a broken compass.", "Just enjoy.", "Let's all live and die naturally.",
+        "My cheesestick.", "Oi Felix! C'mere bro!", "I don't know how to use Samsung!",
+        "Don't panic when you encounter tides, follow them.", "Don't claim ownership over my butt."];
+      let quoteCount = 0;
+      console.log(quotes[3]);
+      console.log(quotes.length);
+      document.getElementById("newQuote").addEventListener("click", buttonClicked);
+      function buttonClicked(){
+        console.log(quoteCount);
+        console.log(quotes[quoteCount]);
+        document.getElementById("qText").innerHTML = quotes[quoteCount];
+        if(quoteCount>=7){
+          quoteCount=0;
+        }else{
+          quoteCount += 1;
+        }
+      }
+    </script>
+  </body>
+</html>

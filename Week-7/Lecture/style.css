@@ -1,0 +1,45 @@
+#quoteSection{
+  background-color: #114aa6;
+  margin: 30vh 20vw;
+  padding: 8vh 10vw 10vh 10vw;
+  /* the first set of numbers is top/bottom
+    Second set is left/right*/
+  border-radius:8px;
+}
+#flex{
+  display:flex;
+  margin: 150px;
+}
+div{
+  border: 1px solid black;
+  margin-left: 2vw;
+}
+.flexitem{
+  flex-grow: 1;
+}
+.flexitem2{
+  flex-grow: 2;
+}
+button{
+  border-radius: 8px;
+  padding: 1vh 5vw;
+  /* for padding top/bottom is smaller than left/right */
+  float: right;
+  margin-top: 1vh;
+  background-color: black;
+  color: #e8eaed;
+}
+button:hover{
+  border: #fff solid 1px;
+}
+button:active{
+  color: #c3c6c9;
+}
+h1{
+  color: #e8eaed;
+  font-family: "EB Garamond";
+  font-weight: 200;
+}
+p{
+  font-family: helvetica;
+}
