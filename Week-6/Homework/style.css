@@ -23,9 +23,11 @@ p{
 }
 body{
   background-color: var(--dreamyPeach);
+  margin-left: 3vw;
 }
 img{
-  width: 96vw;
+  width: 95vw;
+  overflow:hidden;
 }
 button{
   margin-top: 10px;
