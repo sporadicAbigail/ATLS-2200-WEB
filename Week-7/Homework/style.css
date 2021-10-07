@@ -1,0 +1,10 @@
+body{
+  background-color: black;
+}
+h1, h2, p{
+  color: red;
+}
+img{
+  float: right;
+  width: 50vw;
+}

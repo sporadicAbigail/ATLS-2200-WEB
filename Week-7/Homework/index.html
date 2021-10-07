@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Stray Kids Quote Machine</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Welcome to the Stray Kids Quote Machine</h1>
+    <p>Quotes are from the song or inside jokes/memes said by the members.</p>
+    <img id = "picture" src = "procrastinating.jpg">
+    <button id = "myButton"> Let's get a quote! </button>
+    <h2 id="quote">Stray Kids!</h2>
+    <p id = "origin">Miroh</p>
+
+
+    <script>
+      const quotes = ["I like the view right now!","I'm on a hellevator"];
+      const origins = ["The View", "Hellevator"];
+      const images = ["theView.jpg", "skzhellevator.webp"];
+      let i = 0;
+      document.getElementById("myButton").addEventListener("click", buttonClicked);
+
+      function buttonClicked(){
+        document.getElementById("quote").innerHTML = quotes[i];
+        document.getElementById("origin").innerHTML = origins[i];
+        document.getElementById("picture").src=images[i];
+
+        if (i<quotes.length-1){
+          i++;
+        } else {
+          i=0;
+        }
+      }
+    </script>
+  </body>
+</html>
