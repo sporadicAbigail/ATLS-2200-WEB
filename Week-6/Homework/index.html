@@ -17,26 +17,47 @@
 
 
       <button id="spookButton">Spookify this site</button>
+      <button id="unspookButton">Make this site less spooky</button>
     </section>
 
     <script>
+      let capyNum = 0;
       document.getElementById("capybara").addEventListener("click",changeImage);
       document.getElementById("spookButton").addEventListener("click",spookify);
+      document.getElementById("unspookButton").addEventListener("click",unspookify);
 
       function changeImage(){
-        alert("button pushed");
-        document.getElementById("capybara").src = "https://cdn.theatlantic.com/media/img/photo/2018/11/photos-companionable-capybaras/c01_890874902-1/original.jpg";
-        document.getElementById("capybaraCaption").remove();
+        // alert("button pushed" + capyNum);
+        if (capyNum == 0){
+          document.getElementById("capybara").src = "https://cdn.theatlantic.com/media/img/photo/2018/11/photos-companionable-capybaras/c01_890874902-1/original.jpg";
+          capyNum = 1;
+        } else {
+          document.getElementById("capybara").src = "https://cdn.britannica.com/s:800x450,c:crop/94/194294-138-B2CF7780/overview-capybara.jpg";
+          capyNum = 0;
+        }
+        // document.getElementById("capybaraCaption").remove();
       }
 
       function spookify(){
-        alert("Boo!");
+        // alert("Boo!");
         document.body.style.background="#F29A2E";
         document.getElementById("headingOne").style.color="#8C3027";
-        document.getElementById("spookButton").remove();
         document.getElementById("capybara").src = "https://i.ytimg.com/vi/ein9i_Du1-8/maxresdefault.jpg";
-
+        document.getElementById("spookButton").style.backgroundColor="black";
+        document.getElementById("spookButton").style.color="#F29A2E";
+        document.getElementById("unspookButton").style.backgroundColor="black";
+        document.getElementById("unspookButton").style.color="#F29A2E";
         // document.getElementById("capybaraSection").style.backgroundColor = "#F29422";
+      }
+
+      function unspookify(){
+        document.body.style.background="";
+        document.getElementById("headingOne").style.color="";
+        document.getElementById("capybara").src = "https://cdn.britannica.com/s:800x450,c:crop/94/194294-138-B2CF7780/overview-capybara.jpg";
+        document.getElementById("spookButton").style.backgroundColor="";
+        document.getElementById("spookButton").style.color="";
+        document.getElementById("unspookButton").style.backgroundColor="";
+        document.getElementById("unspookButton").style.color="";
       }
     </script>
   </body>
