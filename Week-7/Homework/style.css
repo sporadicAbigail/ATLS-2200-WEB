@@ -7,4 +7,16 @@ h1, h2, p{
 img{
   float: right;
   width: 50vw;
+  padding: 5px;
+}
+button{
+  background-color: red;
+}
+#origin{
+  font-style: italic;
+}
+#quote{
+  border-style: dotted;
+  padding: 10px;
+  overflow: hidden;
 }
