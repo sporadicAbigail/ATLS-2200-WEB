@@ -1,8 +1,13 @@
 body{
   background-color: black;
 }
-h1, h2, p{
+h1, h2{
   color: red;
+  font-family: "Architects Daughter", cursive;
+}
+p{
+  color:red;
+  font-family: "Montserrat";
 }
 img{
   float: right;
@@ -11,6 +16,8 @@ img{
 }
 button{
   background-color: red;
+  font-family: "Montserrat";
+  padding: 10px;
 }
 #origin{
   font-style: italic;
