@@ -7,6 +7,7 @@
   }
 body{
   background-color:var(--camel);
+  margin: 10px;
 }
 h1{
   font-family: Montserrat;
@@ -41,6 +42,25 @@ p{
   font-family: Frank+Ruhl+Libre;
   font-size: 14px;
 }
+button{
+  /* font-family: Frank+Ruhl+Libre; */
+  background-color: var(--brown);
+  color: white;
+  padding: 13px;
+  border-radius: 10px;
+  /* How to align content to center */
+  align-content: center;
+}
+button:hover{
+  background-color: var(--bistre);
+}
 #buttons{
   display:flex;
+}
+.options{
+  flex-grow: 1;
+  width: auto;
+}
+$mixMatch{
+  align-items: center;
 }
