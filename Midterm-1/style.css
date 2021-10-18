@@ -1,0 +1,46 @@
+:root{
+  --plum: #6F1D1B;
+  --camel: #BB9457;
+  --bistre: #432818;
+  --brown: #99582A;
+  --banana: #FFE6A7;
+  }
+body{
+  background-color:var(--camel);
+}
+h1{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 48px;
+  text-align:center;
+}
+h2{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 36px;
+  color:var(--plum);
+  background-color: var(--banana);
+}
+h3{
+  font-family: Montserrat;
+  font-size:28px;
+}
+h4{
+  font-family: Montserrat;
+  font-size: 24px;
+}
+h5{
+  font-family: Montserrat;
+  font-size: 20px;
+}
+h6{
+  font-family: Montserrat;
+  font-size:16px;
+}
+p{
+  font-family: Frank+Ruhl+Libre;
+  font-size: 14px;
+}
+#buttons{
+  display:flex;
+}
