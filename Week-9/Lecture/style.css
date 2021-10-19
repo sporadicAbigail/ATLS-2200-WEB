@@ -10,11 +10,13 @@ use . for classes */
   margin: 0vh 10vw 0 19vw;
   padding-top: 80px;
   border: 1px solid #aaa;
+  border-top: none;
 }
 .meal{
   flex-grow: 1;
   width:auto;
-  border: 1px solid black;
+  border: 1px solid #aaa;
+  background-color: #EAECEF;
 }
 #image, .menu{
   flex-grow:1;
@@ -25,13 +27,15 @@ h2{
   margin-top: 28px;
   padding-bottom:0;
   font-size: 1.8em;
+  margin-left: 30px;
 }
 
 #dinnermenu, #brunchmenu{
   display:none;
 }
 .active{
-  background-color:pink;
+  border-bottom: none;
+  background-color: white;
 }
 
 img{
