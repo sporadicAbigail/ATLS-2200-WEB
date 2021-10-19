@@ -49,7 +49,7 @@ button{
   padding: 13px;
   border-radius: 10px;
   /* How to align content to center */
-  align-content: center;
+
 }
 button:hover{
   background-color: var(--bistre);
@@ -60,7 +60,9 @@ button:hover{
 .options{
   flex-grow: 1;
   width: auto;
+  text-align: center;
 }
-$mixMatch{
-  align-items: center;
+#mixMatch{
+  display:flex;
+  justify-content: center;
 }

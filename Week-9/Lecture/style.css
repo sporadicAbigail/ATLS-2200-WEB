@@ -1,0 +1,50 @@
+/* Use hashtags for ids
+use . for classes */
+
+#tabs{
+  display: flex;
+  margin: 10vh 10vw 0 19vw;
+}
+#items{
+  display:flex;
+  margin: 0vh 10vw 0 19vw;
+  padding-top: 80px;
+  border: 1px solid #aaa;
+}
+.meal{
+  flex-grow: 1;
+  width:auto;
+  border: 1px solid black;
+}
+#image, .menu{
+  flex-grow:1;
+  width: auto;
+  max-width: 50%;
+}
+h2{
+  margin-top: 28px;
+  padding-bottom:0;
+  font-size: 1.8em;
+}
+
+#dinnermenu, #brunchmenu{
+  display:none;
+}
+.active{
+  background-color:pink;
+}
+
+img{
+  width: 80%;
+  max-height: 50%;
+  object-fit: cover;
+  /* The following centers things horizontally
+  You cannot text align center an image*/
+  display:block;
+  margin:auto;
+  /*changes position in the container*/
+  object-position: 20% 10%;
+}
+#image, .entree{
+  padding-top:80px;
+}
