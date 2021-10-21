@@ -51,4 +51,5 @@ function setActive(e){
 // buttons are made to be clickable, so we don't need extra configuration for h2
 function setActiveButton(e){
   e.target.classList.toggle("active");
+  alert("you clicked");
 }
