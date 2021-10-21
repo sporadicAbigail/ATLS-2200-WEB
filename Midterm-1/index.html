@@ -8,38 +8,38 @@
   </head>
   <body>
     <h1>Writing Prompt Generator</h1>
-
+    <!-- The buttons have generic names so that it is easy to append 'content'
+    which will apply to the actual content -->
     <section id="buttons">
       <div class = "options">
-        <button id="photoPrompt">Photo Prompt</button>
+        <button id="photo" class="active">Photo Prompt</button>
       </div>
       <div class="options">
-        <button id="quotePrompt">Quote Prompt</button>
+        <button id="quote">Quote Prompt</button>
       </div>
       <div class="options">
-        <button id="characterPrompt">Character Prompt</button>
+        <button id="character">Character Prompt</button>
       </div>
     </section>
 
     <!-- <button id="mixMatch">Mix and Match Prompts</button> -->
 
-    <div id = "quoteContent" class="content active">
+    <div id = "quoteContent" class="content">
       <h2>heckity hackity it's a quotie</h2>
     </div>
 
     <div id = "photoContent" class = "content">
       <p>Just put something for photo</p>
-    <div>
+    </div>
 
-    <div id = "genContent" class="content">
+    <div id = "characterContent" class="content">
       <p>We're chasing the moon whee</p>
-    <div>
+    </div>
 
 
     <section id="inspiration">
-      <h2>"You only fail when you stop writing." </h2>
-      <h2>-Ray Bradbury</h2>
-      <p>How can I put the quote above together in separate lines? I don't think I'm allowed to use "br>"</p>
+      <h2>"You only fail when you stop writing." <span>-Ray Bradbury</span></h2>
+      <!-- Credits to Katherine for using span! Thank you so much! <3 -->
       <h3>Wow heading 3</h3>
       <h4>Wow heading 4</h4>
       <h5>Wow heading 5</h5>

@@ -54,6 +54,9 @@ button{
 button:hover{
   background-color: var(--bistre);
 }
+span{
+  display: block;
+}
 #buttons{
   display:flex;
 }
@@ -61,6 +64,12 @@ button:hover{
   flex-grow: 1;
   width: auto;
   text-align: center;
+}
+.content{
+  display: none;
+}
+.active{
+  /* Literally do nothing, I just need you so I can identify what's active */
 }
 #mixMatch{
   display:flex;
