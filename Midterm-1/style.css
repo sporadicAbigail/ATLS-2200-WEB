@@ -57,6 +57,11 @@ button:hover{
 span{
   display: block;
 }
+img{
+  width: 50vw;
+  display: block;
+  margin:auto;
+}
 #buttons{
   display:flex;
 }

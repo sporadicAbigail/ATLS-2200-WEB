@@ -3,8 +3,8 @@
 
 
 let quoteArray = ["Is he active?", "You make me happy."];
-let characterArray = ["Character A and B are gearing up to chase the moon, character C has no idea."];
-let photoArray = ["images/han.png"];
+let characterArray = ["Character A and B are gearing up to chase the moon, character C has no idea.", "Your character is a spy.", "Your character swears like a sailor to cope."];
+let photoArray = ["images/han.png", "images/mine1.jpg","images/mine2.jpg","images/moon.jpg", "images/toy.jpg"];
 let prevPrompt;
 let randomNum;
 
@@ -13,8 +13,6 @@ let randomNum;
 document.getElementById("photo").addEventListener('click',setActive,false);
 document.getElementById("quote").addEventListener('click',setActive,false);
 document.getElementById("character").addEventListener('click',setActive,false);
-
-
 
 function setActive(e){
   //HELLO! This next section identifies what was previously showing: prevPrompt
@@ -36,7 +34,29 @@ function setActive(e){
   e.target.classList.toggle("active");
   //get what is now active - but it's just the 'root' the button is what is active
   curPrompt = document.getElementsByClassName("active")[0].id;
+
+  if(curPrompt == "photo"){
+    changePhoto();
+  } else if (curPrompt == "quote") {
+    length=quoteArray.length;
+    changeQuote();
+  } else{
+    length=characterArray.length;
+    changeCharacter();
+  }
+
   //same as above, adding "Content" to the root and displaying the content
   document.getElementById(curPrompt+"Content").style.display="block";
   alert(prevPrompt + " ooh " + curPrompt);
+}
+
+function changePhoto(){
+  length=photoArray.length;
+  console.log(length);
+  //random integer source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+  //Since length counts the number of items in the array from one
+  //And array's count from 0
+  //I think multiplying by length down below should be fine
+  randomNum = Math.floor(Math.random()*length);
+  document.getElementById("image").innerHTML="<img src = " + photoArray[randomNum]+">";
 }
