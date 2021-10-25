@@ -62,6 +62,9 @@ img{
   display: block;
   margin:auto;
 }
+hr{
+  border-top-color: var(--bistre);
+}
 #buttons{
   display:flex;
 }
@@ -79,4 +82,7 @@ img{
 #mixMatch{
   display:flex;
   justify-content: center;
+}
+#inspiration{
+  background-color: var(--banana);
 }
