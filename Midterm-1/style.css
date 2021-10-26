@@ -21,6 +21,7 @@ h2{
   font-size: 36px;
   color:var(--plum);
   background-color: var(--banana);
+  padding: 5px;
 }
 h3{
   font-family: Montserrat;
@@ -61,6 +62,9 @@ img{
   width: 50vw;
   display: block;
   margin:auto;
+  margin-top: 10px;
+  background-color: var(--banana);
+  padding: 7px;
 }
 hr{
   border-top-color: var(--bistre);

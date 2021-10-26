@@ -6,6 +6,7 @@ let quoteArray = ["Is he active?", "You make me happy.", "And we'll all study to
 let characterArray = ["Character A and B are gearing up to chase the moon, character C has no idea.", "Your character is a spy.", "Your character swears like a sailor to cope."];
 let photoArray = ["images/han.png", "images/mine1.jpg","images/mine2.jpg","images/moon.jpg", "images/toy.jpg"];
 let photoExplanation = ["Why is he taking a picture with a goose?","There's an abandoned mine, why?","An abandoned mine leads to a lake, then what?","What's so special about the moon tonight?","Why has a toy been left in the free library?"];
+let photoAlt = ["A teenaged boy takes a selfie with a goose in the background.", "A bunch of rocks are covering a closed entrance to a mine", "several piles of different colored rocks overlook a lake", "A moon rising over a road", "A toy in a free library"];
 let prevPrompt;
 let randomNum;
 
@@ -65,7 +66,7 @@ function changePhoto(){
   randomNum = Math.floor(Math.random()*length);
   console.log(randomNum);
   // document.getElementById("image").innerHTML="<img src = " + photoArray[randomNum]+">";
-  document.getElementById("photoContent").innerHTML="<img src = " + photoArray[randomNum]+"> <p>"+photoExplanation[randomNum]+"</p>";
+  document.getElementById("photoContent").innerHTML="<img src = " + photoArray[randomNum]+" alt= "+photoAlt[randomNum]+"> <p>"+photoExplanation[randomNum]+"</p>";
 }
 
 function changeQuote(){
