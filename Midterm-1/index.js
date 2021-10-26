@@ -1,5 +1,5 @@
 //PSEURDO
-
+//MAKE SLIDES TOO
 
 
 let quoteArray = ["Is he active?", "You make me happy.", "And we'll all study together like one big happy family.","Did you say you knew how to do this?"];
