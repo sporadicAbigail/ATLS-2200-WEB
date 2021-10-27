@@ -62,7 +62,7 @@ img{
   width: 50vw;
   display: block;
   margin:auto;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: var(--banana);
   padding: 7px;
 }
@@ -88,5 +88,5 @@ hr{
   justify-content: center;
 }
 #inspiration{
-  background-color: var(--banana);
+  background-color: var(--brown);
 }
