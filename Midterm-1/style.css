@@ -67,7 +67,8 @@ img{
   padding: 7px;
 }
 hr{
-  border-top-color: var(--bistre);
+  border: 2px solid var(--bistre);
+  margin: 20px;
 }
 #buttons{
   display:flex;
@@ -88,5 +89,21 @@ hr{
   justify-content: center;
 }
 #inspiration{
-  background-color: var(--brown);
+  /* background-color: var(--brown); */
+  border-radius: 15px;
+  border: 2px solid var(--bistre);
+}
+#inspiration h4{
+  padding: 10px;
+  margin: 5px;
+}
+/* #content{
+  background-color: var(--banana);
+} */
+#content p{
+  text-align: center;
+  background-color: var(--banana);
+}
+#content h2{
+  text-align: center;
 }
