@@ -15,7 +15,7 @@ let randomNum;
 document.getElementById("photo").addEventListener('click',setActive,false);
 document.getElementById("quote").addEventListener('click',setActive,false);
 document.getElementById("character").addEventListener('click',setActive,false);
-document.getElementById("mixMatch").addEventListener('click',test,false);
+document.getElementById("mixMatch").addEventListener('click',setActive,false);
 
 function setActive(e){
   //HELLO! This next section identifies what was previously showing: prevPrompt
@@ -85,17 +85,27 @@ function changeCharacter(){
 
   document.getElementById("characterContent").innerHTML="<h2>"+characterArray[randomNum]+"</h2>";
 }
-function test(){
+function changeMix(){
   arrayLength = photoArray.length;
   console.log(arrayLength);
   randomNum = newRandomNum(randomNum, arrayLength);
-  console.log(randomNum);
+  console.log(randomNum+" random num one"+arrayLength);
   //It would be nice to have a random number for each setction
   //my concern is that it will overwwrie what has been written for the div
   //or break it because several divs are active at once
   //so what if I did nested divs inside the mixmatch div
   //and eah of those divs changed like above
   //but only the one overarching div is set active
+  document.getElementById("mixPhoto").innerHTML="<img src = " + photoArray[randomNum]+" alt= "+photoAlt[randomNum]+"> <p>"+photoExplanation[randomNum]+"</p>";
+  arrayLength=quoteArray.length;
+  randomNum = newRandomNum(randomNum, arrayLength);
+  console.log(randomNum+" random num two"+arrayLength);
+  document.getElementById("mixQuote").innerHTML="<h2>"+quoteArray[randomNum]+"</h2>";
+  arrayLength=characterArray.length;
+  console.log(randomNum);
+  randomNum = newRandomNum(randomNum, arrayLength);
+  console.log(randomNum = "random num three" + arrayLength);
+  document.getElementById("mixCharacter").innerHTML="<h2>"+characterArray[randomNum]+"</h2>";
 }
 function newRandomNum(oldNum, length){
   newNum = Math.floor(Math.random()*length);
