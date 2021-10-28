@@ -98,6 +98,7 @@ function changeMix(){
   //so what if I did nested divs inside the mixmatch div
   //and eah of those divs changed like above
   //but only the one overarching div is set active
+  //Yeah I did that
   alternate = " alt= '" + photoAlt[randomNum] + "'>";
   document.getElementById("mixPhoto").innerHTML="<img src = " + photoArray[randomNum]+alternate+" <p>"+photoExplanation[randomNum]+"</p>";
   arrayLength=quoteArray.length;
@@ -107,18 +108,18 @@ function changeMix(){
   arrayLength=characterArray.length;
   console.log(randomNum);
   randomNum = newRandomNum(randomNum, arrayLength);
-  console.log(randomNum = "random num three" + arrayLength);
+  console.log(randomNum + "random num three" + arrayLength);
   document.getElementById("mixCharacter").innerHTML="<h2>"+characterArray[randomNum]+"</h2>";
 }
 function newRandomNum(oldNum, length){
   newNum = Math.floor(Math.random()*length);
-  console.log(newNum+"newNum");
-  console.log(oldNum+"oldNum");
+  // console.log(newNum+"newNum");
+  // console.log(oldNum+"oldNum");
   //While loop is needed so it doesn't give the same result as before - we want to get something every time the button is clicked
   //Source: https://www.w3schools.com/js/js_loop_while.asp
   while (newNum == oldNum){
     newNum = Math.floor(Math.random()*length);
-    console.log("iterate" + newNum);
+    // console.log("iterate" + newNum);
   }
   return newNum;
 }
