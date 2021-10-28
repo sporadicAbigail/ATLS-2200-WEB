@@ -3,7 +3,7 @@
 
 
 let quoteArray = ["Is he active?", "You make me happy.", "And we'll all study together like one big happy family.","Did you say you knew how to do this?"];
-let characterArray = ["Character A and B are gearing up to chase the moon, character C has no idea.", "Your character is a spy.", "Your character swears like a sailor to cope."];
+let characterArray = ["Character A and B are gearing up to chase the moon, character C has no idea.", "Your character is a spy.", "Your character swears like a sailor to cope.","Your character is covered in tattoos."];
 let photoArray = ["images/han.png", "images/mine1.jpg","images/mine2.jpg","images/moon.jpg", "images/toy.jpg"];
 let photoExplanation = ["Why is he taking a picture with a goose?","There's an abandoned mine, why?","An abandoned mine leads to a lake, then what?","What's so special about the moon tonight?","Why has a toy been left in the free library?"];
 let photoAlt = ["A teenaged boy takes a selfie with a goose in the background.", "A bunch of rocks are covering a closed entrance to a mine", "several piles of different colored rocks overlook a lake", "A moon rising over a road", "A toy in a free library"];
@@ -50,7 +50,7 @@ function setActive(e){
 
   //same as above, adding "Content" to the root and displaying the content
   document.getElementById(curPrompt+"Content").style.display="block";
-  alert(prevPrompt + " ooh " + curPrompt);
+  //alert(prevPrompt + " ooh " + curPrompt);
 }
 
 function changePhoto(){
@@ -69,7 +69,9 @@ function changePhoto(){
   randomNum = Math.floor(Math.random()*length);
   console.log(randomNum);
   // document.getElementById("image").innerHTML="<img src = " + photoArray[randomNum]+">";
-  document.getElementById("photoContent").innerHTML="<img src = " + photoArray[randomNum]+" alt= "+photoAlt[randomNum]+"> <p>"+photoExplanation[randomNum]+"</p>";
+  alternate = " alt= '" + photoAlt[randomNum] + "'>";
+  console.log(alternate);
+  document.getElementById("photoContent").innerHTML="<img src = " + photoArray[randomNum]+ alternate + " <p>"+photoExplanation[randomNum]+"</p>";
 }
 
 function changeQuote(){
@@ -80,8 +82,8 @@ function changeQuote(){
 }
 
 function changeCharacter(){
-  length=characterArray.length;
-  randomNum = Math.floor(Math.random()*length);
+  arrayLength=characterArray.length;
+  randomNum = newRandomNum(randomNum, arrayLength);
 
   document.getElementById("characterContent").innerHTML="<h2>"+characterArray[randomNum]+"</h2>";
 }
@@ -96,7 +98,8 @@ function changeMix(){
   //so what if I did nested divs inside the mixmatch div
   //and eah of those divs changed like above
   //but only the one overarching div is set active
-  document.getElementById("mixPhoto").innerHTML="<img src = " + photoArray[randomNum]+" alt= "+photoAlt[randomNum]+"> <p>"+photoExplanation[randomNum]+"</p>";
+  alternate = " alt= '" + photoAlt[randomNum] + "'>";
+  document.getElementById("mixPhoto").innerHTML="<img src = " + photoArray[randomNum]+alternate+" <p>"+photoExplanation[randomNum]+"</p>";
   arrayLength=quoteArray.length;
   randomNum = newRandomNum(randomNum, arrayLength);
   console.log(randomNum+" random num two"+arrayLength);
@@ -109,5 +112,13 @@ function changeMix(){
 }
 function newRandomNum(oldNum, length){
   newNum = Math.floor(Math.random()*length);
+  console.log(newNum+"newNum");
+  console.log(oldNum+"oldNum");
+  //While loop is needed so it doesn't give the same result as before - we want to get something every time the button is clicked
+  //Source: https://www.w3schools.com/js/js_loop_while.asp
+  while (newNum == oldNum){
+    newNum = Math.floor(Math.random()*length);
+    console.log("iterate" + newNum);
+  }
   return newNum;
 }
