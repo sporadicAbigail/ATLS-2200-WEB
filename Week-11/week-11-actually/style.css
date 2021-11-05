@@ -13,10 +13,10 @@
     grid-template-columns: repeat(3, 1fr);
     /* grid template area is a way to enforce the grid */
     /* you name your pics and then they take up the space as is described below */
-    /* grid-template-areas:
+    grid-template-areas:
     "header header"
     "two three"
-    "two four"; */
+    "two four";
   }
 }
 
@@ -35,9 +35,10 @@
     /* grid template area is a way to enforce the grid */
     /* you name your pics and then they take up the space as is described below */
     grid-template-areas:
-    "header header"
-    "two three"
-    "two four";
+    "header"
+    "two"
+    "three"
+    "four";
   }
 }
 
