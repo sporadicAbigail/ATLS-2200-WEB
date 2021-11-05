@@ -1,0 +1,237 @@
+/* you need an overlap of 1 px so if there's a screen on the border, it'll still work */
+@media screen and (min-width:800px){
+  /* this works like anything in css - just dependent on screen size - mobile vs not */
+  #contactimg{
+    display:block;
+  }
+  #hero h1{
+    font-size: 60px;
+  }
+  #portfolio{
+    display: grid;
+    /* instead of display: flex */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid template area is a way to enforce the grid */
+    /* you name your pics and then they take up the space as is described below */
+    /* grid-template-areas:
+    "header header"
+    "two three"
+    "two four"; */
+  }
+}
+
+@media screen and (max-width:801px){
+  /* meaning smaller than 700, smaller than ipad */
+  #contactimg{
+    display:none;
+  }
+  #hero h1{
+    font-size: 30px;
+  }
+  #portfolio{
+    display: grid;
+    /* instead of display: flex */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid template area is a way to enforce the grid */
+    /* you name your pics and then they take up the space as is described below */
+    grid-template-areas:
+    "header header"
+    "two three"
+    "two four";
+  }
+}
+
+#hero h1{
+  z-index:1;
+  color: #fff;
+  position: absolute;
+  margin-top:450px;
+  margin-left: 40px;
+  margin-right: 100px;
+  font-weight: 600;
+  /* font-size: 30px; */
+}
+
+body{
+  margin: auto 20vw auto 20vw;
+}
+
+/* .portfoliopic{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+} */
+
+
+
+#contact{
+
+}
+
+#contactimg{
+
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+#contacttext{
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  align-items: center;
+  height: calc(100%-50px);
+  margin-top: 50px;
+
+}
+
+.contactdivs{
+  height:100%;
+}
+
+#social img{
+  width:50px;
+  margin: 0px 10px 0px 10px;
+
+}
+
+#social{
+  display:flex;
+  width: 60%;
+  margin:auto;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#hero img{
+  width: 100%;
+  height:600px;
+  object-fit: cover;
+}
+
+.tmember img{
+  width: 250px;
+  height:250px;
+  object-fit: cover;
+  border-radius: 1000px;
+}
+
+.tmember:nth-child(2) img{
+  object-position: 0px 0px;
+}
+
+.tmember:nth-child(3) img{
+  object-position: 0px 0px;
+}
+.tmember{
+  flex-grow:1;
+  text-align: center;
+}
+
+#team{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+nav{
+  display:flex;
+  width: 50vw;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin: 30px auto 30px calc(100% - 50vw);
+}
+
+nav a{
+  font-family: arial;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #1f1b1b;
+}
+
+.active{
+  color: #e84c41;
+}
+
+h1{
+  font-family: "Merriweather";
+  font-size: 40px;
+}
+
+
+
+p{
+  font-family: arial;
+}
+
+#index h2{
+  font-size: 40px;
+}
+
+h4{
+  font-family: arial;
+}
+
+#about, #ourteam h2, #do{
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+body{
+  margin-bottom: 100px;
+}
+
+#team{
+  margin-top: 80px;
+}
+#contact{
+  display: grid;
+  /* a bit more flexible because you can have 'interlocking' ex: an image spanning two rows instead of one */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  /* equal size */
+  /* We could also use fr for fraction written as 1fr 1fr, to get 2 columns of equal size */
+  /* Could also use vw */
+  /* doing 1 fr 2 fr will make it unequal sizes */
+  /* you can do everything with a grid that you can with a flex box, but you can't do everything from a grid in a flex box */
+  /* grid more flexible than flex box */
+}
+
+#pic1{
+  grid-area: header;
+  /* grid-row-start:1;
+  grid-row-end:3; */
+  /* grid-column-start:1;
+  grid-column-end:3; */
+  /* these tell how many columns and rows to take up */
+  /* it starts from 1, and if you want it to take up 2 rows, you go from 1 to 3 */
+}
+#pic2{
+  grid-area: two;
+}
+#pic3{
+  grid-area: three;
+}
+#pic4{
+  border: 4px lightgreen solid;
+  grid-column-start:2;
+  /* makes it span 2 rows */
+  grid-row-start: span 2;
+}
+#pic5{
+  border: 4px lightgreen solid;
+  /* grid-row-start:3; */
+  object-position: 70% 100%;
+  /* recommended to use percentages */
+}
+#pic8{
+  object-position: 0px 0px;
+}
+
+#portfolio img{
+  object-fit:cover;
+   /* Will crop and fill instead of stretch  */
+  width:100%;
+  height:100%;
+}

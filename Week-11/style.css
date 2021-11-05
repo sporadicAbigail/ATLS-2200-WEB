@@ -1,0 +1,26 @@
+html h2{
+  font-size: 50px;
+}
+body h2{
+  font-size: 4em;
+}
+body{
+  /* 50vw is 50 of the window */
+  width: 50vw;
+  border: 1px solid black;
+}
+div{
+  background-color: pink;
+  width: 50%;
+  /* 50% of the div instead of the window*/
+}
+span{
+  /* affects just the text within the span */
+  background-color: gray;
+  font-size: 2rem;
+  /* span inside of p, so the 2em is 64px */
+  /* rem is 32 pixels since it references winow */
+}
+p{
+  font-size: 32px;
+}
