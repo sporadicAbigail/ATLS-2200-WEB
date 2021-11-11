@@ -108,3 +108,37 @@ button:hover{
   background-color: #D6BA73;
   font-size:10px;
 }
+#galleryPics{
+  display: grid;
+  grid-template-areas:
+    "square1 tall1"
+    "tall2 tall1"
+    "tall2 tall1"
+    "tall3 tall4"
+    "tall3 tall4"
+    "tall3 square2";
+}
+#galleryPics img{
+  object-fit:cover;
+   /* Will crop and fill instead of stretch  */
+  width:100%;
+  height:100%;
+}
+#hiraeth{
+  grid-area: tall1;
+}
+#ht{
+  grid-area: tall2;
+}
+#dlc{
+  grid-area: tall3;
+}
+#opgcb{
+  grid-area: tall4;
+}
+#chibi{
+  grid-area: square1;
+}
+#wow{
+  grid-area: square2;
+}
