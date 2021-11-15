@@ -24,7 +24,30 @@ Vegas Gold: #D6BA73
 
 
 */
+@media screen and (min-width:800px){
+  #galleryPics{
+  display: grid;
+  grid-template-areas:
+    "square1 tall1 tall2"
+    "tall3 tall1 tall2"
+    "tall3 tall4 tall2"
+    "tall3 tall4 square2"
+;
+  }
+}
 
+@media screen and (max-width: 801px){
+  #galleryPics{
+  display: grid;
+  grid-template-areas:
+    "square1 tall1"
+    "tall2 tall1"
+    "tall2 tall1"
+    "tall3 tall4"
+    "tall3 tall4"
+    "tall3 square2";
+  }
+}
 body{
   font-family: "Maitree";
   background-color: white;
@@ -108,16 +131,7 @@ button:hover{
   background-color: #D6BA73;
   font-size:10px;
 }
-#galleryPics{
-  display: grid;
-  grid-template-areas:
-    "square1 tall1"
-    "tall2 tall1"
-    "tall2 tall1"
-    "tall3 tall4"
-    "tall3 tall4"
-    "tall3 square2";
-}
+
 #galleryPics img{
   object-fit:cover;
    /* Will crop and fill instead of stretch  */
