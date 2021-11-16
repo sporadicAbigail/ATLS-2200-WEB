@@ -1,0 +1,13 @@
+h1{
+  font-family: "verdana";
+}
+body{
+  font-family: fantasy !important;
+}
+#section1{
+  font-family: arial;
+}
+h1{
+  /*overwrites the earlier h1*/
+  font-family: cursive;
+}

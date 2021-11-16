@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+    <h1> !important </h1>
+    <p>Just avoid it</p>
+    <h2>Selectors by specificity</h2>
+    <p>The more specific the CSS selector is, the higher it ranks in the result. !important > inline > ID > Class >Element/Tag </p>
+    <h2> Source Order</h2>
+    <p> It cascades, runs from top to bottom </p>
+    <h2> DOM - Document object model </h2>
+    <p> How we access parts of the DOM inside of our code. "1. document.getElementsByTagName('img')[n]"
+    "2. document.getElementsByClassName('pics')[n]" "3.document.getElementByID('myimg')"</p>
+    <p> DOM Selector + DOM Property = value </p>
+    <p> More general DOM selectors</p>
+    <p> "1. document.querySelector('.pics') or document.querySelector('#myimg') or document.querySelector('img')" "2. document.querySelectorAll('img')[n]"</p>
+    <p>query selector returns the first time it shows up</p>
+    <p> If you want to reference the same thing multiple times, you can set it as a variable like. "let picture = document.getElementsByTagName('img')[n]"</p>
+    <h2> What DOM properties do we know?</h2>
+    <ul>
+      <li> .style.backgroundColor </li>
+      <li>.style.display</li>
+      <li>.innerHTML</li>
+      <li>.classList.toggle</li>
+      <li>.id</li>
+    </ul>
+    <hr>
+    <h1 id = "title" class = "red"> This is the first title </h1>
+    <h2 id = "subtitle" class = "blue"> This is the second title </h2>
+    <p id = "section1"> words words words </p>
+    <h2 id = "subtitle1" class = "red"> This is the third title </h2>
+    <p id = "section2"> lorem ipseum slidfalg adfilerj osdufewalk fdjalerijdf </p>
+
+    <script type = "text/javascript" src="index.js"></script>
+  </body>
+</html>
