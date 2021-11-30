@@ -27,8 +27,8 @@ fetch('weather.json') //this is to get the file
   console.log(weather);
   let location = weather.location.name;
   let temp = weather.current.temp_f;
-  document.getElementByID('location').innerHTML=location;
-  document.getElementByID('tempf').innerHTML=temp;
+  document.getElementById('location').innerHTML = location;
+  document.getElementById('tempf').innerHTML=temp;
 })
 
 fetch('forecast.json')
@@ -37,11 +37,11 @@ fetch('forecast.json')
   let forecast = data;
   console.log(forecast);
   forecastdate = forecast.forecast.forecastday[0].date;
-  document.getElementByID('date').innderHTML=forecastdate; //using js to write the date
-  document.getElementByID('sunrise').innerHTML=forecast.forecast.forecastday[0].astro.sunrise;
+  document.getElementById('date').innderHTML=forecastdate; //using js to write the date
+  document.getElementById('sunrise').innerHTML=forecast.forecast.forecastday[0].astro.sunrise;
   forecasttime = forecast.forecast.forecastday[0].hour[1].time;
-  document.getElementByID('time').innerHTML= forecasttime.slice(forecasttime.length-5, forecasttime.length);
-  document.getElementByID('cond').innerHTML=forecast.forecast.forecastday[0].hour[1].condition.text;
+  document.getElementById('time').innerHTML= forecasttime.slice(forecasttime.length-5, forecasttime.length);
+  document.getElementById('cond').innerHTML=forecast.forecast.forecastday[0].hour[1].condition.text;
   console.log(forecast.forecast.forecastday[0].astro.sunrise);
   console.log(forecast.forecast.forecastday[0].hour[1].time);
   console.log(forecast.forecast.forecastday[0].hour[1].condition.text);
