@@ -1,0 +1,56 @@
+:root{
+  --bg: pink;
+  --frame: #BB9457;
+  --accentOne: #432818;
+  --accentTwo: #orange;
+  --accentThree: #FFE6A7;
+  }
+body{
+  background-color:var(--bg);
+  margin: 0px;
+}
+p{
+  color: white;
+}
+h1{
+  color: white;
+}
+a:link{
+  color: var(--accentTwo);
+}
+a:visited{
+  color: gray;
+}
+#hero{
+  width:100vw;
+  height:30vh;
+  overflow:hidden;
+  margin:0px;
+  padding:0px;
+}
+
+#heroimg{
+  width:120vw;
+  position: relative;
+  bottom: 100px;
+  right:100px;
+}
+
+#hero h1{
+  z-index:1;
+  position:relative;
+  font-size:5vw;
+  top:10vh;
+  text-align: center;
+}
+#navi{
+  /* margin-top: 10px; */
+}
+#projects{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 3px purple solid;
+}
+div{
+  color:var(--frame);
+}
