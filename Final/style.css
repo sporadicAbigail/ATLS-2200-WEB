@@ -1,16 +1,18 @@
 :root{
+  /* --bg: #0b0015; */
   --bg: pink;
   --frame: #BB9457;
-  --accentOne: #432818;
+  --accentOne: #d1a900;
   --accentTwo: #orange;
   --accentThree: #FFE6A7;
   }
 body{
   background-color:var(--bg);
-  margin: 0px;
+  margin: 0vw;
 }
 p{
   color: white;
+  margin: 2vw;
 }
 h1{
   color: white;
@@ -27,21 +29,27 @@ a:visited{
   overflow:hidden;
   margin:0px;
   padding:0px;
+  top: 0px;
+  position: relative;
 }
 
 #heroimg{
   width:120vw;
   position: relative;
-  bottom: 100px;
-  right:100px;
+  z-index: 0;
+  bottom: 300px;
+  /*right:100px; */
+  margin: 0px;
+  object-fit: cover;
 }
 
 #hero h1{
   z-index:1;
   position:relative;
   font-size:5vw;
-  top:10vh;
+  top:50px;
   text-align: center;
+  margin: 0px;
 }
 #navi{
   /* margin-top: 10px; */
@@ -53,4 +61,41 @@ a:visited{
 }
 div{
   color:var(--frame);
+}
+.topnav {
+  background-color: var(--bg);
+  overflow: hidden;
+  border-bottom: 3px var(--accentOne) solid;
+}
+.topnav a{
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--accentOne);
+  font-size: 28px;
+}
+.topnav a:hover{
+  background-color: var(--frame);
+}
+.topnav a.active{
+  background-color: var(--accentOne);
+  color: black;
+}
+.frame{
+  background-color: var(--frame);
+  padding: 15px;
+}
+#profileFrame{
+  float: right;
+  width: 30vw;
+  height: 30vw;
+  margin: 1vw;
+}
+#profilePic{
+  float:right;
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  object-position: top;
 }
