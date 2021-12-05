@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "name":"Gallery",
+      "picture":"Assets/variation.png",
+      "blurb":"A collection of icons/one-off visual works.",
+      "link":"gallery.html"
+    },
+    {
+      "name":"Mission Impizzable",
+      "picture":"Assets/pizza.png",
+      "blurb":"The final project for my design class, where a game was created using GB Studio.",
+      "link": "https://sporadic-abigail.itch.io/mission-impizzable"
+    }
+  ]
+}

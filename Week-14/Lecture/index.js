@@ -45,6 +45,7 @@ fetch('forecast.json')
   console.log(forecast.forecast.forecastday[0].astro.sunrise);
   console.log(forecast.forecast.forecastday[0].hour[1].time);
   console.log(forecast.forecast.forecastday[0].hour[1].condition.text);
+  document.getElementById('image').innerHTML=forecast.current.icon;
 })
 
 //we are treating each data separately, and can't use stuff from other fetches

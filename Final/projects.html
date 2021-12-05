@@ -4,16 +4,29 @@
     <meta charset="utf-8">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue">
   </head>
   <body>
-    <p>Reeee</p>
-    <section id="projects">
-      <div id="projOne">
-        <p>guah</p>
-      </div>
-      <div>
-        <p>wheee</p>
+    <section id ="hero">
+      <h1 id="herotext">Abigail Hutabarat</h1>
+      <img alt="several lanterns" src="Assets/hero.jpg" id="heroimg">
+    </section>
+    <section id = "navi">
+      <div class="topnav">
+        <!-- Referencing w3schools https://www.w3schools.com/howto/howto_js_topnav.asp -->
+        <a href="index.html">About Me</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+        <a href="blog.html">Blogs</a>
       </div>
     </section>
+    <section id = "projContainer">
+      <!-- This is where all fht projects populate -->
+    </section>
+    <!-- The placement of this script is critical. It needs to go on the bottom here, or else it won't work properly -->
+    <!-- And this is why: https://stackoverflow.com/questions/13885533/it-says-that-typeerror-document-getelementbyid-is-null -->
+    <script src="index.js"></script>
   </body>
 </html>

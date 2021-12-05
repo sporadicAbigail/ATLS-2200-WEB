@@ -1,0 +1,40 @@
+let numProjs = 2;
+let curProject;
+let name;
+let pic;
+
+  fetch('projects.json') //this is to get the file
+  .then((response) => response.json())
+  .then(function(data){
+    let rawData = data;
+
+    // looping over json
+    // https://www.codegrepper.com/code-examples/javascript/loop+through+json+object+javascript
+    // the main thing is the loop needs to be in the fetch rather than outside of the fetch
+    for(j=0;j<numProjs;j++){
+      name=rawData.projects[j].name;
+      pic = rawData.projects[j].picture;
+      blurb=rawData.projects[j].blurb;
+      console.log("grrah " + name);
+      console.log("brrrah "+pic);
+
+      //IMAGE CODE
+        // https://stackoverflow.com/questions/28778048/get-image-from-json-file-using-javascript-and-display-in-html-img-tag
+      var img = new Image();
+      img.src=pic;
+      img.setAttribute("class", "projectImg");
+      console.log("image + " + img.src);
+
+      document.getElementById('projContainer').innerHTML+="<div id=project"+j+" class=singleProject></div>"; //create divs for each project
+      document.getElementById('project'+j).appendChild(img);
+      document.getElementById('project'+j).innerHTML+="<h2>"+name+"</h2>";
+      document.getElementById('project'+j).innerHTML+="<p>"+blurb+"</p>";
+    }
+
+
+
+  })
+
+
+  // document.getElementById('projContainer').innerHTML+= "<div class = 'singleProject'><img src="+pic+"/></div>";
+  // document.getElementById('projContainer').innerHTML += "<div class='singleProject'><h1>" + name + "</h1></div>";
