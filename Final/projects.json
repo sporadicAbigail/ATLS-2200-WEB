@@ -11,6 +11,12 @@
       "picture":"Assets/pizza.png",
       "blurb":"The final project for my design class, where a game was created using GB Studio.",
       "link": "https://sporadic-abigail.itch.io/mission-impizzable"
+    },
+    {
+      "name":"Placebo",
+      "picture":"Assets/placebo.png",
+      "blurb":"A project done outside of school where an international group of people work together to create a music video over two months. I was in charge of the motion graphic design.",
+      "link":"https://youtu.be/DM7mYeo1m4I"
     }
   ]
 }

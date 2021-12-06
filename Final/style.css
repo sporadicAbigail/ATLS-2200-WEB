@@ -69,6 +69,7 @@ div{
   background-color: var(--bg);
   overflow: hidden;
   border-bottom: 3px var(--accentOne) solid;
+  position: sticky;
 }
 .topnav a{
   float: left;
@@ -111,4 +112,22 @@ div{
 }
 .projectImg{
   width: 20vw;
+}
+.blogTile{
+  background-color: var(--frame);
+  width: 40vw;
+}
+#travelTile{
+  float:right;
+}
+#wipTile{
+  float: left;
+}
+button{
+  background-color: var(--frame);
+  border: 3px solid var(--accentOne);
+  padding: 12px;
+  color: var(--accentOne);
+  font-family: "bebas Neue", cursive;
+  /* HOW TO ALIGN BUTTONS */
 }
