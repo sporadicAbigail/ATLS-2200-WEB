@@ -2,6 +2,7 @@ let numProjs = 3;
 let curProject;
 let name;
 let pic;
+let picAlt;
 
   fetch('projects.json') //this is to get the file
   .then((response) => response.json())
@@ -15,6 +16,7 @@ let pic;
       name=rawData.projects[j].name;
       pic = rawData.projects[j].picture;
       blurb=rawData.projects[j].blurb;
+      picAlt=rawData.projects[j].alt;
       console.log("grrah " + name);
       console.log("brrrah "+pic);
 
@@ -23,6 +25,7 @@ let pic;
       var img = new Image();
       img.src=pic;
       img.setAttribute("class", "projectImg");
+      img.setAttribute("alt", picAlt);
       console.log("image + " + img.src);
 
       document.getElementById('projContainer').innerHTML+="<div id=project"+j+" class=singleProject></div>"; //create divs for each project

@@ -4,19 +4,26 @@
       "name":"Gallery",
       "picture":"Assets/variation.png",
       "blurb":"A collection of icons/one-off visual works.",
-      "link":"gallery.html"
+      "link":"gallery.html",
+      "alt":"An abstract image."
     },
     {
       "name":"Mission Impizzable",
       "picture":"Assets/pizza.png",
       "blurb":"The final project for my design class, where a game was created using GB Studio.",
-      "link": "https://sporadic-abigail.itch.io/mission-impizzable"
+      "link": "https://sporadic-abigail.itch.io/mission-impizzable",
+      "alt":"A black and white pizza ninja"
     },
     {
       "name":"Placebo",
       "picture":"Assets/placebo.png",
       "blurb":"A project done outside of school where an international group of people work together to create a music video over two months. I was in charge of the motion graphic design.",
-      "link":"https://youtu.be/DM7mYeo1m4I"
+      "link":"https://youtu.be/DM7mYeo1m4I",
+      "alt":"5 drawn characters looking at the viewer"
+    },
+    {
+      "name":"Typographic book",
+      "picture":""
     }
   ]
 }

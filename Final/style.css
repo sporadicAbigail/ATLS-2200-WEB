@@ -57,13 +57,16 @@ a:visited{
   text-align: center;
   margin: 0px;
 }
-#projects{
+#projContainer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border: 3px purple solid;
+  margin: 10px;
 }
 div{
   color:var(--frame);
+  margin: 5px;
+  padding: 10px;
 }
 .topnav {
   background-color: var(--bg);
@@ -105,7 +108,11 @@ div{
   object-position: top;
 }
 .centered{
+  /* https://www.w3schools.com/howto/howto_css_image_center.asp */
+  display: block;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .singleProject{
   background-color: var(--frame);
@@ -123,6 +130,10 @@ div{
 #wipTile{
   float: left;
 }
+#photoTile{
+  float: right;
+}
+
 button{
   background-color: var(--frame);
   border: 3px solid var(--accentOne);
