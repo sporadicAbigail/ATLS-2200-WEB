@@ -30,7 +30,7 @@ let picAlt;
 
       document.getElementById('projContainer').innerHTML+="<div id=project"+j+" class=singleProject></div>"; //create divs for each project
       document.getElementById('project'+j).appendChild(img);
-      document.getElementById('project'+j).innerHTML+="<h2>"+name+"</h2>";
+      document.getElementById('project'+j).innerHTML+="<h2 class = 'centered'>"+name+"</h2>";
       document.getElementById('project'+j).innerHTML+="<p>"+blurb+"</p>";
     }
 
