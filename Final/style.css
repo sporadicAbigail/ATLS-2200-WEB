@@ -126,6 +126,10 @@ div{
   background-color: var(--frame);
   margin: 10px;
 }
+.singleProject:hover{
+  /* opacity notes: https://www.w3schools.com/cssref/css3_pr_opacity.asp */
+  opacity: .5;
+}
 .projectImg{
   /* these all work together to make the images centered */
   display: block;
@@ -136,6 +140,8 @@ div{
   width: 20vh;
   /*make it so the images don't warp*/
   object-fit: cover;
+}
+.projectImg:hover{
 
 }
 .blogTile{

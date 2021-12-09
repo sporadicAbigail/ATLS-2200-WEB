@@ -17,6 +17,7 @@ let picAlt;
       pic = rawData.projects[j].picture;
       blurb=rawData.projects[j].blurb;
       picAlt=rawData.projects[j].alt;
+      link=rawData.projects[j].link;
       console.log("grrah " + name);
       console.log("brrrah "+pic);
 
@@ -27,8 +28,9 @@ let picAlt;
       img.setAttribute("class", "projectImg");
       img.setAttribute("alt", picAlt);
       console.log("image + " + img.src);
-
-      document.getElementById('projContainer').innerHTML+="<div id=project"+j+" class=singleProject></div>"; //create divs for each project
+      // Looking at Oceane's website for the linking https://oceanestars.github.io/
+      document.getElementById('projContainer').innerHTML+="<div id=div"+j+" class=singleProject></div>"; //create divs for each project
+      document.getElementById('div'+j).innerHTML+="<a href='" + link + "' target = '_blank' id=project" +j+ "></a>";
       document.getElementById('project'+j).appendChild(img);
       document.getElementById('project'+j).innerHTML+="<h2 class = 'centered'>"+name+"</h2>";
       document.getElementById('project'+j).innerHTML+="<p>"+blurb+"</p>";
