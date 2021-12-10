@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "name":"Gallery",
-      "picture":"Assets/variation.png",
-      "blurb":"A collection of icons/one-off visual works.",
-      "link":"gallery.html",
+      "name":"WEB Class Portal",
+      "picture":"Assets/notesPortal.png",
+      "blurb":"A portal to where all of my projects and notes from my WEB design class are housed.",
+      "link":"https://sporadicabigail.github.io/ATLS-2200-WEB/",
       "alt":"An abstract image."
     },
     {

@@ -29,11 +29,14 @@ let picAlt;
       img.setAttribute("alt", picAlt);
       console.log("image + " + img.src);
       // Looking at Oceane's website for the linking https://oceanestars.github.io/
-      document.getElementById('projContainer').innerHTML+="<div id=div"+j+" class=singleProject></div>"; //create divs for each project
+      document.getElementById('projContainer').innerHTML+="<div id=div"+j+" class=singleProject><div class = 'hiddenBG'></div></div>"; //create divs for each project
       document.getElementById('div'+j).innerHTML+="<a href='" + link + "' target = '_blank' id=project" +j+ "></a>";
+
       document.getElementById('project'+j).appendChild(img);
       document.getElementById('project'+j).innerHTML+="<h2 class = 'centered'>"+name+"</h2>";
       document.getElementById('project'+j).innerHTML+="<p>"+blurb+"</p>";
+      // I think the button looks cheesy which is why I don't include it
+      // document.getElementById('project'+j).innerHTML+="<button class='centered'> <a href='"+link+"' target='_blank'>Find Out More</a></button>";
     }
 
 

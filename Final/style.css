@@ -68,9 +68,14 @@ a:visited{
 #projContainer{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border: 3px purple solid;
+  /* border: 3px purple solid; */
   margin: 10px;
 }
+#projContainer a{
+  /* Removing underline for all of the text that's a link */
+  text-decoration: none;
+}
+
 div{
   color:var(--frame);
   margin: 5px;
@@ -80,7 +85,6 @@ div{
   background-color: var(--bg);
   overflow: hidden;
   border-bottom: 3px var(--accentOne) solid;
-  position: sticky;
 }
 .topnav a{
   float: left;
@@ -141,9 +145,6 @@ div{
   /*make it so the images don't warp*/
   object-fit: cover;
 }
-.projectImg:hover{
-
-}
 .blogTile{
   background-color: var(--frame);
   width: 40vw;
@@ -157,7 +158,9 @@ div{
 #photoTile{
   float: right;
 }
-
+#resumePic{
+  width: 90vw;
+}
 button{
   background-color: var(--frame);
   border: 3px solid var(--accentOne);
