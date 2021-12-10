@@ -133,6 +133,7 @@ div{
 .singleProject:hover{
   /* opacity notes: https://www.w3schools.com/cssref/css3_pr_opacity.asp */
   opacity: .5;
+  background: gray;
 }
 .projectImg{
   /* these all work together to make the images centered */
