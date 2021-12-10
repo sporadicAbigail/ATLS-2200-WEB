@@ -18,8 +18,8 @@ let picAlt;
       blurb=rawData.projects[j].blurb;
       picAlt=rawData.projects[j].alt;
       link=rawData.projects[j].link;
-      console.log("grrah " + name);
-      console.log("brrrah "+pic);
+      // console.log("grrah " + name);
+      // console.log("brrrah "+pic);
 
       //IMAGE CODE
         // https://stackoverflow.com/questions/28778048/get-image-from-json-file-using-javascript-and-display-in-html-img-tag
@@ -27,7 +27,7 @@ let picAlt;
       img.src=pic;
       img.setAttribute("class", "projectImg");
       img.setAttribute("alt", picAlt);
-      console.log("image + " + img.src);
+      // console.log("image + " + img.src);
       // Looking at Oceane's website for the linking https://oceanestars.github.io/
       document.getElementById('projContainer').innerHTML+="<div id=div"+j+" class=singleProject><div class = 'hiddenBG'></div></div>"; //create divs for each project
       document.getElementById('div'+j).innerHTML+="<a href='" + link + "' target = '_blank' id=project" +j+ "></a>";
