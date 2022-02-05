@@ -106,6 +106,11 @@ div{
   background-color: var(--frame);
   padding: 15px;
 }
+/* https://www.ankursheel.com/blog/full-width-you-tube-video-embed */
+.video{
+  width: 100%;
+  height: 100%;
+}
 #profileFrame{
   float: right;
   width: 30vw;
@@ -118,6 +123,12 @@ div{
   height: 30vw;
   object-fit: cover;
   object-position: top;
+}
+#videoContainer{
+  float:right;
+  width: 32vw;
+  height: 18vw;
+  margin: 1vw;
 }
 .centered{
   /* https://www.w3schools.com/howto/howto_css_image_center.asp */

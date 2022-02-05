@@ -5,7 +5,7 @@
       "picture":"Assets/notesPortal.png",
       "blurb":"A portal to where all of my projects and notes from my WEB design class are housed.",
       "link":"https://sporadicabigail.github.io/ATLS-2200-WEB/",
-      "alt":"An abstract image."
+      "alt":"An image of several links."
     },
     {
       "name":"Mission Impizzable",
@@ -23,7 +23,10 @@
     },
     {
       "name":"Typographic book",
-      "picture":""
+      "picture":"Assets/alien.png",
+      "blurb": "A typographic book that was created to the song 'Alien' by Han Jisung.",
+      "link":"",
+      "alt":"rows of text intersected with the word belong"
     }
   ]
 }
