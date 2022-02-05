@@ -27,6 +27,20 @@
       "blurb": "A typographic book that was created to the song 'Alien' by Han Jisung.",
       "link":"https://sporadicabigail.github.io/ATLS-2200-WEB/Final/alien.html",
       "alt":"rows of text intersected with the word belong"
-    }
+    },
+    {
+      "name":"Photography",
+      "picture":"Assets/grass.png",
+      "blurb": "An instagram account where I post photos that I've taken.",
+      "link":"https://www.instagram.com/sporastastic_akaila/",
+      "alt":"landscape of grass and sky"
+    },
+    {
+      "name":"Design",
+      "picture":"Assets/variation.png",
+      "blurb": "A page of several graphic designs that I have created.",
+      "link":"https://sporadicabigail.github.io/ATLS-2200-WEB/Final/gallery.html",
+      "alt":"An abstract image"
+    },
   ]
 }

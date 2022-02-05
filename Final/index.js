@@ -1,4 +1,4 @@
-let numProjs = 4;
+let numProjs = 6;
 let curProject;
 let name;
 let pic;
